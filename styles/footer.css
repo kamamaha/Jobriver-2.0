@@ -1,0 +1,28 @@
+.footer-container {
+    position: relative;
+    z-index: 1;
+}
+
+.footer-container img {
+    height: 15px;
+    width: auto;
+}
+
+.footer-container a {
+    font-weight: 300;
+    font-size: var(--normal);
+    color: var(--darkgrey);
+    margin: 5px;
+    transition: .3 all ease;
+}
+
+.footer-container a:hover {
+    color: var(--purple);
+    text-decoration: none;
+}
+
+.footer-container span {
+    font-weight: 700;
+    font-size: var(--normal);
+    color: var(--darkgrey);
+}
