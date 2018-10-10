@@ -76,6 +76,25 @@ body {
     border-radius: 0;
 }
 
+.log-btn {
+    background-image: linear-gradient(to right, var(--blue), var(--green));
+    color: #fff;
+    font-size: var(--small);
+    font-weight: 700;
+    border-radius: 0;
+    translate: .3s all ease;
+    padding: 5px 20px;
+}
+
+.log-btn:hover {
+    background: none;
+    border: 1px solid var(--green);
+    color: var(--green);
+    font-size: var(--small);
+    font-weight: 700;
+    border-radius: 0;
+}
+
 
 /* SERACH */
 
@@ -237,4 +256,106 @@ input::-webkit-input-placeholder {
     position: absolute;
     top: 150px;
     right: 20px;
+}
+
+
+/* LOGOWANIE */
+
+.login-1 {
+    background-image: url('../assets/images/login-bcg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.login {
+    height: 60vh;
+    z-index: 1;
+}
+
+.login-wrapper {
+    width: auto;
+    background: #fff;
+    box-shadow: 0px 10px 20px rgba(23, 105, 255, 0.1);
+}
+
+.login-wrapper .title img {
+    height: 60px;
+    width: auto;
+}
+
+.login-wrapper .title h1 {
+    font-size: var(--medium);
+    color: var(--green);
+    font-weight: 700;
+}
+
+.login-wrapper p {
+    font-size: var(--normal);
+    color: var(--grey);
+    font-weight: 400;
+    margin: 20px;
+}
+
+.login-wrapper .login-text-down a {
+    font-size: var(--normal);
+    color: var(--purple);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-wrapper .login-text-down a:last-child {
+    font-size: var(--normal);
+    color: var(--grey);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.login-text img {
+    width: 30px;
+    margin: 0px 10px;
+}
+
+.login-text a {
+    text-decoration: none;
+}
+
+.checkbox input {
+    display: none;
+}
+
+label {
+    font-size: 14px;
+    color: var(--grey);
+    display: inline-block;
+    cursor: pointer;
+}
+
+label:before {
+    content: '';
+    display: inline-block;
+    background: #55D8C6;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    border-radius: 100%;
+    box-shadow: 0px 1px 0 0 rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+    border: 10px solid #fff;
+    transition: border .3s ease;
+    margin-bottom: -3px;
+}
+
+.checkbox input:checked+label:before {
+    border-color: #fff;
+    border-width: 3px;
+}
+
+.checkbox input+label {
+    transition: color .7s ease;
+}
+
+.checkbox input:checked+label {
+    color: var(--darkgrey);
 }
