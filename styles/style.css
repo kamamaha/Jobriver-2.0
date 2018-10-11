@@ -8,6 +8,9 @@
         margin: 10px 25px !important;
         width: 70% !important;
     }
+    .footer-container {
+        position: relative !important;
+    }
 }
 
 @media(max-width: 1200px) {}
@@ -107,9 +110,7 @@ body {
 }
 
 .search {
-    height: 80vh;
-    position: relative;
-    z-index: 1;
+    height: auto;
 }
 
 .search-nav-container {
@@ -134,8 +135,7 @@ body {
 }
 
 .search-container {
-    position: relative;
-    top: 15%;
+    margin-top: 80px;
 }
 
 .search-wrapper {
@@ -219,45 +219,6 @@ input::-webkit-input-placeholder {
     cursor: pointer;
 }
 
-.search-images {
-    position: relative;
-    z-index: 0;
-    top: 0;
-    width: 100%;
-}
-
-.search-images img:nth-child(1) {
-    width: 600px;
-    height: auto;
-    position: absolute;
-    top: 45vh;
-    left: 0;
-}
-
-.search-images img:nth-child(2) {
-    width: 530px;
-    height: auto;
-    position: absolute;
-    top: 30vh;
-    right: 50px;
-}
-
-.search-images img:nth-child(3) {
-    width: 120px;
-    height: auto;
-    position: absolute;
-    top: 50px;
-    left: 0;
-}
-
-.search-images img:nth-child(4) {
-    width: 120px;
-    height: auto;
-    position: absolute;
-    top: 150px;
-    right: 20px;
-}
-
 
 /* LOGOWANIE */
 
@@ -318,6 +279,12 @@ input::-webkit-input-placeholder {
 }
 
 .login-text a {
+    text-decoration: none;
+    transition: .3s all ease;
+}
+
+.login-text a:hover {
+    color: var(--green);
     text-decoration: none;
 }
 
