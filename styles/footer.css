@@ -1,6 +1,6 @@
 .footer-container {
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-container img {
@@ -22,37 +22,6 @@
 }
 
 .footer-container span {
-    font-weight: 700;
-    font-size: var(--normal);
-    color: var(--darkgrey);
-}
-
-.footer-container-2 {
-    position: absolute;
-    z-index: 1;
-    bottom: -300px;
-    width: 100%;
-}
-
-.footer-container-2 img {
-    height: 15px;
-    width: auto;
-}
-
-.footer-container-2 a {
-    font-weight: 300;
-    font-size: var(--normal);
-    color: var(--darkgrey);
-    margin: 5px;
-    transition: .3 all ease;
-}
-
-.footer-container-2 a:hover {
-    color: var(--purple);
-    text-decoration: none;
-}
-
-.footer-container-2 span {
     font-weight: 700;
     font-size: var(--normal);
     color: var(--darkgrey);
